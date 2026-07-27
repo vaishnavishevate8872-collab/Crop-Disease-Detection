@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crop Disease Detection</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><i class="fa-solid fa-seedling"></i> Crop Disease Detection</div>
+  <ul>
+    <li><a href="#" onclick="showPage('home')">Home</a></li>
+    <li><a href="#" onclick="showPage('register')">Register</a></li>
+    <li><a href="#" onclick="showPage('login')">Login</a></li>
+    <li><a href="#" onclick="showPage('dashboard')">Dashboard</a></li>
+    <li><a href="#" onclick="showPage('detect')">Detection</a></li>
+    <li><a href="#" onclick="showPage('history')">History</a></li>
+    <li><a href="#" onclick="showPage('developer')">Developer</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="page active">
+  <h1>Crop Disease Detection System</h1>
+  <p>Detect crop diseases using Firebase-based web application.</p>
+  <button onclick="showPage('register')">Get Started</button>
+</section>
+
+<section id="register" class="page">
+  <h2>Register</h2>
+  <input id="regName" placeholder="Full Name">
+  <input id="regEmail" type="email" placeholder="Email">
+  <input id="regPassword" type="password" placeholder="Password">
+  <button onclick="registerUser()">Register</button>
+</section>
+
+<section id="login" class="page">
+  <h2>Login</h2>
+  <input id="loginEmail" type="email" placeholder="Email">
+  <input id="loginPassword" type="password" placeholder="Password">
+  <button onclick="loginUser()">Login</button>
+</section>
+
+<section id="dashboard" class="page">
+  <h2>Dashboard</h2>
+  <div>Total Scans: <span id="scanCount">0</span></div>
+  <div>Diseases Found: <span id="diseaseCount">0</span></div>
+  <div>Healthy Crops: <span id="healthyCount">0</span></div>
+</section>
+
+<section id="detect" class="page">
+  <h2>Crop Disease Detection</h2>
+  <input type="file" id="image">
+  <select id="cropType">
+    <option>Tomato</option>
+    <option>Potato</option>
+    <option>Rice</option>
+    <option>Wheat</option>
+    <option>Cotton</option>
+  </select>
+  <button onclick="detectDisease()">Detect</button>
+  <h3 id="result">No Scan Yet</h3>
+</section>
+
+<section id="history" class="page">
+  <h2>History</h2>
+  <table border="1">
+    <thead>
+      <tr><th>Crop</th><th>Disease</th><th>Date</th></tr>
+    </thead>
+    <tbody id="historyTable"></tbody>
+  </table>
+</section>
+
+<section id="developer" class="page">
+  <h2>Developer Details</h2>
+  <p><strong>Project:</strong> Crop Disease Detection</p>
+  <p><strong>Technology:</strong> HTML, CSS, JavaScript, Firebase</p>
+  <p><strong>Developer:</strong> Your Name</p>
+  <p><strong>College:</strong> Your College Name</p>
+</section>
+
+<footer>
+  © 2026 Crop Disease Detection System
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

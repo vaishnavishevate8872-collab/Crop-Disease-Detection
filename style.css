@@ -1,0 +1,621 @@
+/*==========================
+    GOOGLE FONT
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4fff4;
+    color:#333;
+}
+
+/*==========================
+        NAVBAR
+==========================*/
+
+nav{
+    width:100%;
+    background:#1b5e20;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo i{
+    color:#7CFC00;
+    margin-right:10px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#7CFC00;
+}
+
+/*==========================
+          PAGE
+==========================*/
+
+.page{
+    display:none;
+    min-height:90vh;
+    padding:50px;
+}
+
+.active{
+    display:block;
+}
+
+/*==========================
+        HERO
+==========================*/
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#1b5e20;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:15px 40px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#1b5e20;
+    transform:scale(1.05);
+}
+
+/*==========================
+          CARDS
+==========================*/
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:50px;
+    color:#2e7d32;
+}
+
+.card h2{
+    margin:20px 0;
+}
+
+/*==========================
+        FORMS
+==========================*/
+
+.form-box{
+    width:400px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#1b5e20;
+    margin-bottom:20px;
+}
+
+.form-box input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.form-box button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    border-radius:8px;
+    margin-top:15px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.form-box button:hover{
+    background:#1b5e20;
+}
+
+.form-box p{
+    margin-top:20px;
+    text-align:center;
+}
+
+.form-box a{
+    color:#2e7d32;
+    text-decoration:none;
+}
+
+/*==========================
+      DASHBOARD
+==========================*/
+
+.title{
+    text-align:center;
+    color:#1b5e20;
+    margin-bottom:40px;
+}
+
+.dashboard{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.dash-card{
+    width:260px;
+    background:linear-gradient(135deg,#43a047,#1b5e20);
+    color:white;
+    border-radius:15px;
+    text-align:center;
+    padding:30px;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.dash-card h1{
+    font-size:48px;
+    margin-top:20px;
+}
+
+/*==========================
+     DETECTION
+==========================*/
+
+.detect-box{
+    width:600px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.detect-box input,
+.detect-box select{
+    width:100%;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.detect-box button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.detect-box button:hover{
+    background:#1b5e20;
+}
+
+#result{
+    margin-top:25px;
+    color:#1b5e20;
+}
+
+/*==========================
+        TABLE
+==========================*/
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+table th{
+    background:#1b5e20;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f2f2f2;
+}
+
+/*==========================
+      DEVELOPER
+==========================*/
+
+.developer{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.developer i{
+    font-size:80px;
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.developer p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/*==========================
+        FOOTER
+==========================*/
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/*==========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:900px){
+
+nav{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.form-box,
+.detect-box{
+    width:95%;
+}
+
+/* ==========================================
+   CROP DISEASE DETECTION SYSTEM
+   STYLE.CSS - PART 1
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4fff4;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* =========================
+        NAVIGATION BAR
+========================= */
+
+nav{
+    width:100%;
+    height:70px;
+    background:#1b5e20;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+    color:#fff;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.logo i{
+    color:#9cff57;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#9cff57;
+}
+
+/* =========================
+        PAGE
+========================= */
+
+.page{
+    display:none;
+    min-height:100vh;
+    padding:50px;
+}
+
+.page.active{
+    display:block;
+}
+
+/* =========================
+        HOME
+========================= */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.hero button{
+    margin-top:40px;
+    padding:15px 40px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#1b5e20;
+    transform:scale(1.05);
+}
+
+/* =========================
+        CARDS
+========================= */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:60px;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:55px;
+    color:#2e7d32;
+}
+
+.card h2{
+    margin:20px 0;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* =========================
+        FORMS
+========================= */
+
+.form-box{
+    width:420px;
+    margin:50px auto;
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#1b5e20;
+    margin-bottom:25px;
+}
+
+.form-box input{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+}
+
+.form-box input:focus{
+    border:1px solid #2e7d32;
+}
+
+.form-box button{
+    width:100%;
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.form-box button:hover{
+    background:#1b5e20;
+}
+
+.form-box p{
+    margin-top:20px;
+    text-align:center;
+}
+
+.form-box a{
+    color:#2e7d32;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* =========================
+        TITLES
+========================= */
+
+.title{
+    text-align:center;
+    font-size:36px;
+    color:#1b5e20;
+    margin-bottom:40px;
+}
+
+/* =========================
+        ANIMATION
+========================= */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero,
+.card,
+.form-box{
+    animation:fadeUp .7s ease;
+}
