@@ -37,6 +37,7 @@ function showHistory() {
     });
 }
 
+saveHistory(result);
 showHistory();
 
 const imageInput = document.getElementById("imageInput");
