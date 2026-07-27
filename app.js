@@ -7,6 +7,37 @@ const diseases = [
     "Rust Disease",
     "Bacterial Wilt"
 ];
+// History Code
+function saveHistory(disease) {
+    let history = JSON.parse(localStorage.getItem("diseaseHistory")) || [];
+
+    history.push({
+        disease: disease,
+        date: new Date().toLocaleString()
+    });
+
+    localStorage.setItem("diseaseHistory", JSON.stringify(history));
+}
+
+
+function showHistory() {
+    let history = JSON.parse(localStorage.getItem("diseaseHistory")) || [];
+
+    let historyBox = document.getElementById("history");
+
+    historyBox.innerHTML = "";
+
+    history.forEach(item => {
+        historyBox.innerHTML += `
+            <p>
+                Disease: ${item.disease}<br>
+                Date: ${item.date}
+            </p>
+        `;
+    });
+}
+
+showHistory();
 
 const imageInput = document.getElementById("imageInput");
 
