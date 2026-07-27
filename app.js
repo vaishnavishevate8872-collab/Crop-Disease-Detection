@@ -30,6 +30,7 @@ function showHistory() {
     history.forEach(item => {
         historyBox.innerHTML += `
             <p>
+            localStorage.removeItem("diseaseHistory")
                 Disease: ${item.disease}<br>
                 Date: ${item.date}
             </p>
