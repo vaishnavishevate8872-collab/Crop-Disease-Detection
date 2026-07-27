@@ -1,5 +1,18 @@
+const diseases = [
+    "Healthy",
+    "Leaf Spot",
+    "Early Blight",
+    "Late Blight",
+    "Powdery Mildew",
+    "Rust Disease",
+    "Bacterial Wilt"
+];
 
-// ---------- Firebase Imports ----------
+const imageInput = document.getElementById("imageInput");
+
+function predictDisease() {
+    // code here
+}
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
 
 import {
